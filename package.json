@@ -21,7 +21,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "precommit-msg": "echo '正在执行eslint验证...' && ex",
+        "precommit-msg": "echo '正在执行eslint验证...' && exit 0",
         "eslint": "eslint ./src",
         "eslint-fix": "eslint --fix ./src"
     },
