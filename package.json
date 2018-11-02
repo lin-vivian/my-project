@@ -1,25 +1,45 @@
 {
     "name": "my-project",
-    "version": "0.1.0",
-    "private": true,
+    "version": "1.0.0",
+    "description": "npm init yarn add react yarn add react-dom yarn add react-script",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/linhongjing/my-project.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/linhongjing/my-project/issues"
+    },
+    "homepage": "https://github.com/linhongjing/my-project#readme",
     "dependencies": {
         "react": "^16.6.0",
         "react-dom": "^16.6.0",
-        "react-scripts": "2.0.5"
+        "react-scripts": "^2.1.1"
     },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
-    },
-    "eslintConfig": {
-        "extends": "react-app"
+        "precommit-msg": "echo '正在执行eslint验证...' && ex",
+        "eslint": "eslint ./src",
+        "eslint-fix": "eslint --fix ./src"
     },
     "browserslist": [
         ">0.2%",
         "not dead",
         "not ie <= 11",
         "not op_mini all"
-    ]
+    ],
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "pre-commit": [
+        "precommit-msg",
+        "eslint"
+    ],
+    "devDependencies": {
+        "eslint-fix": "^1.0.3",
+        "pre-commit": "^1.2.2"
+    }
 }
