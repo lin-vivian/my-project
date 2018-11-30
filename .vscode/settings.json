@@ -1,0 +1,7 @@
+{
+    "git.ignoreLimitWarning": true,
+    "emmet.triggerExpansionOnTab": true,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+}
